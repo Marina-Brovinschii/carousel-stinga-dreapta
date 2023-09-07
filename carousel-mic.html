@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <style>
+        body {
+            background-color: rosybrown;
+            padding-top: 70px;
+        }
+        .carousel {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow: 0px 8px 10px 7px rgb(107, 82, 82);
+        }
+        .carousel .slide {
+            width: 2400px;
+            height: 600px;
+            transition: 1s;
+        }
+        .carousel #left:target .slide {
+            transform: translateX(0);
+        }
+        .carousel #right:target .slide {
+            transform: translateX(-1200px);
+        }
+        .carousel img {
+            margin-right: -4px;
+        }
+        .left-right {
+            text-align: center;
+        }
+        a:hover {
+            color:tomato;
+        }
+        a {
+            text-decoration: none;
+            color: brown;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div id="left">
+            <div id="right">
+                <div class="slide">
+                    <img src="https://fastly.picsum.photos/id/27/400/600.jpg?hmac=brzRC2kvdlDGb6fE5RWfGiYKyJEBywuNpZQpQd3a3mM"alt="">
+                    <img src="https://fastly.picsum.photos/id/861/400/600.jpg?hmac=g5eXdS_CJwtqwK50GNNQ_T6qGRzcNo8tCMB0D-Ozd5c"alt="">
+                    <img src="https://fastly.picsum.photos/id/796/400/600.jpg?hmac=Wwy7UxFHbBxjpzUcTsNS4V0fozs8Sk9FDoPyD8jHESM"alt="">
+                    <img src="https://fastly.picsum.photos/id/280/400/600.jpg?hmac=7_89_WRaJ_-zZ7XblDb_GgZfsJlqJenq2jN_1O9qZTQ"alt="">
+                    <img src="https://fastly.picsum.photos/id/970/400/600.jpg?hmac=T9_ZYWPJGgloVdQC4rHPMKb9opprj4wi72Cn7mAgL4s"alt="">
+                    <img src="https://fastly.picsum.photos/id/645/400/600.jpg?hmac=RUKxAyuK0GtmpGDSNUSGEYfMCkCAO6KgDtZJ5fxLqyE"alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left-right">
+        <a href="#left">🖚</a>
+        <a href="#right">🖛</a>
+    </div>
+</body>
+
+</html>
